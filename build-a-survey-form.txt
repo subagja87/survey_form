@@ -1,0 +1,160 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Tenants Satisfaction Survey</h1>
+    <p id="description">Thank you for participating to improve our Boarding Houses</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+      <legend>Which boarding house are you living in?</legend>
+      <label><input id="kost_1" type="radio" name="kost_name" value="1" checked>Pondok Mekar Hati</input></label>
+      <label><input id="kost_2" type="radio" name="kost_name" value="1">Pondok Mekar Indah</input></label>
+      </div>
+      <div class="form-group">
+      <label id="name-label" class="label-name">Name<input id="name" type="text" placeholder="Enter your name" required></input></label>
+      </div>
+      <div class="form-group">
+      <label id="email-label" class="label-name">Email<input id="email" type="email" placeholder="Enter your email" required></input></label>
+      </div>
+      <div class="form-group">
+      <label id="number-label" class="label-name">How long have you been living in the Boarding House?<input id="number" type="number" min="0" max="120" placeholder="Months"></input>
+      </label>
+      </div>
+      <div class="form-group">
+      <label for="dropdown" class="label-name">What is your occupation?
+          <select id="dropdown"  name="dropdown">
+            <option value="">(select current occupation)</option>
+            <option value="1">A Senior High School Student</option>
+            <option value="2">A University Student</option>
+            <option value="3">An Employee</option>
+            <option value="4">Other</option>
+          </select>
+          </label>
+          </div>
+          <div class="form-group">
+      <legend>Would you recommend the Boarding House to your friends?</legend>
+        <label><input id="definitely" type="radio" name="recommend" value="1" checked> Definitely</input></label>
+        <label><input id="maybe" type="radio" name="recommend" value="2"> Maybe</input></label>
+        <label><input id="no" type="radio" name="recommend" value="3"> No</input></label>
+        </div>
+        <div class="form-group">
+        <legend>What do you think that need to be improved in the Boarding House?</legend>
+        <label><input id="hygienes" type="checkbox" value="1"> Hygienes</input></label>
+        <label><input id="securities" type="checkbox" value="2"> Securities</input></label>
+        <label><input id="facilities" type="checkbox" value="3"> Facilities</input></label>
+        <label><input id="services" type="checkbox" value="4"> Services</input></label>
+        <label><input id="other" type="checkbox" value="5"> Other</input></label>
+        </div>
+        <div class="form-group">
+        <label class="label-name">Any comments or suggestions?
+          <textarea id="message" placeholder="Enter your comments here..."></textarea>
+        </label>
+        </div>
+    <div class="form-group">
+        <button id="submit" type="submit">Submit</button>
+        <button id="reset" type="reset">Clear</button>
+    </div>
+    <footer id="footer">
+      <p id="f1">© Created by Subagja</p>
+      <p id="f2">2024</p>
+    </footer>
+    </form> 
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  color: darkred; 
+}
+
+body{
+  background-image: url(https://img.freepik.com/free-vector/abstract-soft-watercolor-texture-design-background_1055-13837.jpg?ga=GA1.1.1958656827.1729079446);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header{
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+header p{
+  font-style: italic;
+  margin: 10px 0 auto auto;
+}
+
+form{
+  background-color: #ffd1dc;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  border-radius: 1rem;
+  width: 60%;
+}
+
+@media (max-width: 600px){
+  form{
+    width: 90%;
+  }
+}
+
+.form-group{
+  margin: 1rem 1rem;
+}
+
+legend, input[type="text"], input[type="email"], input[type="number"], select, textarea{
+  display: block;
+  width: 100%;
+  margin: 0.5rem auto;
+  border-radius: 0.25rem;
+  height: 2rem;
+}
+
+#message{
+  height: 5rem;
+}
+
+button{
+  background-color: linear-gradient(180deg, #ffd1dc, white);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+}
+
+footer{
+  text-align: center;
+  margin-top: 8rem;
+}
+
+#f1, #f2{
+  margin: 0;
+}
+
+
+** end of undefined **
+
